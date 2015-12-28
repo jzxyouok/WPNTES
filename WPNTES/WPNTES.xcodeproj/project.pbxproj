@@ -7,25 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		019C1E721C315575008EAF88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1E711C315575008EAF88 /* main.m */; };
-		019C1E751C315575008EAF88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1E741C315575008EAF88 /* AppDelegate.m */; };
-		019C1E781C315575008EAF88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1E771C315575008EAF88 /* ViewController.m */; };
-		019C1E7B1C315575008EAF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019C1E791C315575008EAF88 /* Main.storyboard */; };
 		019C1E7D1C315575008EAF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019C1E7C1C315575008EAF88 /* Assets.xcassets */; };
 		019C1E801C315575008EAF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019C1E7E1C315575008EAF88 /* LaunchScreen.storyboard */; };
+		019C1EC81C31570C008EAF88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EAF1C31570C008EAF88 /* AppDelegate.m */; };
+		019C1EC91C31570C008EAF88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EB01C31570C008EAF88 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		019C1E6D1C315575008EAF88 /* WPNTES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPNTES.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		019C1E711C315575008EAF88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		019C1E731C315575008EAF88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		019C1E741C315575008EAF88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		019C1E761C315575008EAF88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		019C1E771C315575008EAF88 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		019C1E7A1C315575008EAF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		019C1E7C1C315575008EAF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		019C1E7F1C315575008EAF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		019C1E811C315575008EAF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		019C1EAE1C31570C008EAF88 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		019C1EAF1C31570C008EAF88 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		019C1EB01C31570C008EAF88 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +53,7 @@
 		019C1E6F1C315575008EAF88 /* WPNTES */ = {
 			isa = PBXGroup;
 			children = (
-				019C1E731C315575008EAF88 /* AppDelegate.h */,
-				019C1E741C315575008EAF88 /* AppDelegate.m */,
-				019C1E761C315575008EAF88 /* ViewController.h */,
-				019C1E771C315575008EAF88 /* ViewController.m */,
-				019C1E791C315575008EAF88 /* Main.storyboard */,
-				019C1E7C1C315575008EAF88 /* Assets.xcassets */,
-				019C1E7E1C315575008EAF88 /* LaunchScreen.storyboard */,
-				019C1E811C315575008EAF88 /* Info.plist */,
+				019C1E871C31570C008EAF88 /* Classes */,
 				019C1E701C315575008EAF88 /* Supporting Files */,
 			);
 			path = WPNTES;
@@ -74,9 +62,527 @@
 		019C1E701C315575008EAF88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				019C1E711C315575008EAF88 /* main.m */,
+				019C1E7C1C315575008EAF88 /* Assets.xcassets */,
+				019C1E7E1C315575008EAF88 /* LaunchScreen.storyboard */,
+				019C1E811C315575008EAF88 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		019C1E871C31570C008EAF88 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				019C1E881C31570C008EAF88 /* AD-广告控制器 */,
+				019C1EA01C31570C008EAF88 /* MainTabBar-自定义tabBar控制器 */,
+				019C1E9C1C31570C008EAF88 /* Main-tabBar子控制器 */,
+				019C1EB81C31570C008EAF88 /* Reading-tabBar子控制器 */,
+				019C1E901C31570C008EAF88 /* Discover-tabBar子控制器 */,
+				019C1EC41C31570C008EAF88 /* Video-tabBar子控制器 */,
+				019C1EA41C31570C008EAF88 /* Me-tabBar子控制器 */,
+				019C1E941C31570C008EAF88 /* Headline-main子控制器 */,
+				019C1EC01C31570C008EAF88 /* Society-main子控制器 */,
+				019C1EA81C31570C008EAF88 /* NewsDetail-点击头条cell的跳转 */,
+				019C1E981C31570C008EAF88 /* LeftMenu-左侧菜单视图 */,
+				019C1EBC1C31570C008EAF88 /* Reply-跟帖控制器 */,
+				019C1EB41C31570C008EAF88 /* Picture-图片控制器 */,
+				019C1E8C1C31570C008EAF88 /* CopySample-拷贝使用 */,
+				019C1EAC1C31570C008EAF88 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		019C1E881C31570C008EAF88 /* AD-广告控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1E891C31570C008EAF88 /* Controller */,
+				019C1E8A1C31570C008EAF88 /* Models */,
+				019C1E8B1C31570C008EAF88 /* Views */,
+			);
+			name = "AD-广告控制器";
+			path = AD;
+			sourceTree = "<group>";
+		};
+		019C1E891C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1E8A1C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1E8B1C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1E8C1C31570C008EAF88 /* CopySample-拷贝使用 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1E8D1C31570C008EAF88 /* Controller */,
+				019C1E8E1C31570C008EAF88 /* Models */,
+				019C1E8F1C31570C008EAF88 /* Views */,
+			);
+			name = "CopySample-拷贝使用";
+			path = CopySample;
+			sourceTree = "<group>";
+		};
+		019C1E8D1C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1E8E1C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1E8F1C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1E901C31570C008EAF88 /* Discover-tabBar子控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1E911C31570C008EAF88 /* Controller */,
+				019C1E921C31570C008EAF88 /* Models */,
+				019C1E931C31570C008EAF88 /* Views */,
+			);
+			name = "Discover-tabBar子控制器";
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		019C1E911C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1E921C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1E931C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1E941C31570C008EAF88 /* Headline-main子控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1E951C31570C008EAF88 /* Controller */,
+				019C1E961C31570C008EAF88 /* Models */,
+				019C1E971C31570C008EAF88 /* Views */,
+			);
+			name = "Headline-main子控制器";
+			path = Headline;
+			sourceTree = "<group>";
+		};
+		019C1E951C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1E961C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1E971C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1E981C31570C008EAF88 /* LeftMenu-左侧菜单视图 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1E991C31570C008EAF88 /* Controller */,
+				019C1E9A1C31570C008EAF88 /* Models */,
+				019C1E9B1C31570C008EAF88 /* Views */,
+			);
+			name = "LeftMenu-左侧菜单视图";
+			path = LeftMenu;
+			sourceTree = "<group>";
+		};
+		019C1E991C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1E9A1C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1E9B1C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1E9C1C31570C008EAF88 /* Main-tabBar子控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1E9D1C31570C008EAF88 /* Controller */,
+				019C1E9E1C31570C008EAF88 /* Models */,
+				019C1E9F1C31570C008EAF88 /* Views */,
+			);
+			name = "Main-tabBar子控制器";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		019C1E9D1C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1E9E1C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1E9F1C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1EA01C31570C008EAF88 /* MainTabBar-自定义tabBar控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EA11C31570C008EAF88 /* Controller */,
+				019C1EA21C31570C008EAF88 /* Models */,
+				019C1EA31C31570C008EAF88 /* Views */,
+			);
+			name = "MainTabBar-自定义tabBar控制器";
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		019C1EA11C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1EA21C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1EA31C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1EA41C31570C008EAF88 /* Me-tabBar子控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EA51C31570C008EAF88 /* Controller */,
+				019C1EA61C31570C008EAF88 /* Models */,
+				019C1EA71C31570C008EAF88 /* Views */,
+			);
+			name = "Me-tabBar子控制器";
+			path = Me;
+			sourceTree = "<group>";
+		};
+		019C1EA51C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1EA61C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1EA71C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1EA81C31570C008EAF88 /* NewsDetail-点击头条cell的跳转 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EA91C31570C008EAF88 /* Controller */,
+				019C1EAA1C31570C008EAF88 /* Models */,
+				019C1EAB1C31570C008EAF88 /* Views */,
+			);
+			name = "NewsDetail-点击头条cell的跳转";
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		019C1EA91C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1EAA1C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1EAB1C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1EAC1C31570C008EAF88 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EAD1C31570C008EAF88 /* Assets-系统代理及主函数 */,
+				019C1EB11C31570C008EAF88 /* Category-分类 */,
+				019C1EB21C31570C008EAF88 /* Library-第三方库 */,
+				019C1EB31C31570C008EAF88 /* Tools-工具及常量 */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		019C1EAD1C31570C008EAF88 /* Assets-系统代理及主函数 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EAE1C31570C008EAF88 /* AppDelegate.h */,
+				019C1EAF1C31570C008EAF88 /* AppDelegate.m */,
+				019C1EB01C31570C008EAF88 /* main.m */,
+			);
+			name = "Assets-系统代理及主函数";
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		019C1EB11C31570C008EAF88 /* Category-分类 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Category-分类";
+			path = Category;
+			sourceTree = "<group>";
+		};
+		019C1EB21C31570C008EAF88 /* Library-第三方库 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Library-第三方库";
+			path = Library;
+			sourceTree = "<group>";
+		};
+		019C1EB31C31570C008EAF88 /* Tools-工具及常量 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Tools-工具及常量";
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		019C1EB41C31570C008EAF88 /* Picture-图片控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EB51C31570C008EAF88 /* Controller */,
+				019C1EB61C31570C008EAF88 /* Models */,
+				019C1EB71C31570C008EAF88 /* Views */,
+			);
+			name = "Picture-图片控制器";
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		019C1EB51C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1EB61C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1EB71C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1EB81C31570C008EAF88 /* Reading-tabBar子控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EB91C31570C008EAF88 /* Controller */,
+				019C1EBA1C31570C008EAF88 /* Models */,
+				019C1EBB1C31570C008EAF88 /* Views */,
+			);
+			name = "Reading-tabBar子控制器";
+			path = Reading;
+			sourceTree = "<group>";
+		};
+		019C1EB91C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1EBA1C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1EBB1C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1EBC1C31570C008EAF88 /* Reply-跟帖控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EBD1C31570C008EAF88 /* Controller */,
+				019C1EBE1C31570C008EAF88 /* Models */,
+				019C1EBF1C31570C008EAF88 /* Views */,
+			);
+			name = "Reply-跟帖控制器";
+			path = Reply;
+			sourceTree = "<group>";
+		};
+		019C1EBD1C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1EBE1C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1EBF1C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1EC01C31570C008EAF88 /* Society-main子控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EC11C31570C008EAF88 /* Controller */,
+				019C1EC21C31570C008EAF88 /* Models */,
+				019C1EC31C31570C008EAF88 /* Views */,
+			);
+			name = "Society-main子控制器";
+			path = Society;
+			sourceTree = "<group>";
+		};
+		019C1EC11C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1EC21C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1EC31C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		019C1EC41C31570C008EAF88 /* Video-tabBar子控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				019C1EC51C31570C008EAF88 /* Controller */,
+				019C1EC61C31570C008EAF88 /* Models */,
+				019C1EC71C31570C008EAF88 /* Views */,
+			);
+			name = "Video-tabBar子控制器";
+			path = Video;
+			sourceTree = "<group>";
+		};
+		019C1EC51C31570C008EAF88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		019C1EC61C31570C008EAF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		019C1EC71C31570C008EAF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +611,7 @@
 		019C1E651C315575008EAF88 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WP;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wangpeng;
 				TargetAttributes = {
@@ -139,7 +646,6 @@
 			files = (
 				019C1E801C315575008EAF88 /* LaunchScreen.storyboard in Resources */,
 				019C1E7D1C315575008EAF88 /* Assets.xcassets in Resources */,
-				019C1E7B1C315575008EAF88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,23 +656,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019C1E781C315575008EAF88 /* ViewController.m in Sources */,
-				019C1E751C315575008EAF88 /* AppDelegate.m in Sources */,
-				019C1E721C315575008EAF88 /* main.m in Sources */,
+				019C1EC91C31570C008EAF88 /* main.m in Sources */,
+				019C1EC81C31570C008EAF88 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		019C1E791C315575008EAF88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				019C1E7A1C315575008EAF88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		019C1E7E1C315575008EAF88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -299,6 +796,7 @@
 				019C1E861C315575008EAF88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
