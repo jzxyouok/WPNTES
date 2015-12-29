@@ -11,6 +11,9 @@
 		019C1E801C315575008EAF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019C1E7E1C315575008EAF88 /* LaunchScreen.storyboard */; };
 		019C1EC81C31570C008EAF88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EAF1C31570C008EAF88 /* AppDelegate.m */; };
 		019C1EC91C31570C008EAF88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EB01C31570C008EAF88 /* main.m */; };
+		019C1ECC1C315956008EAF88 /* WPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1ECB1C315956008EAF88 /* WPADViewController.m */; };
+		019C1ED11C315EAC008EAF88 /* UIView+WPCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1ED01C315EAC008EAF88 /* UIView+WPCategory.m */; };
+		019C1ED71C3188DE008EAF88 /* WPMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1ED61C3188DE008EAF88 /* WPMainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,13 @@
 		019C1EAE1C31570C008EAF88 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		019C1EAF1C31570C008EAF88 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		019C1EB01C31570C008EAF88 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		019C1ECA1C315956008EAF88 /* WPADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPADViewController.h; sourceTree = "<group>"; };
+		019C1ECB1C315956008EAF88 /* WPADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPADViewController.m; sourceTree = "<group>"; };
+		019C1ECF1C315EAC008EAF88 /* UIView+WPCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WPCategory.h"; sourceTree = "<group>"; };
+		019C1ED01C315EAC008EAF88 /* UIView+WPCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WPCategory.m"; sourceTree = "<group>"; };
+		019C1ED41C318383008EAF88 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		019C1ED51C3188DE008EAF88 /* WPMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMainTabBarController.h; sourceTree = "<group>"; };
+		019C1ED61C3188DE008EAF88 /* WPMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMainTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,8 @@
 		019C1E891C31570C008EAF88 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				019C1ECA1C315956008EAF88 /* WPADViewController.h */,
+				019C1ECB1C315956008EAF88 /* WPADViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +309,8 @@
 		019C1EA11C31570C008EAF88 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				019C1ED51C3188DE008EAF88 /* WPMainTabBarController.h */,
+				019C1ED61C3188DE008EAF88 /* WPMainTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +418,8 @@
 		019C1EB11C31570C008EAF88 /* Category-分类 */ = {
 			isa = PBXGroup;
 			children = (
+				019C1ECF1C315EAC008EAF88 /* UIView+WPCategory.h */,
+				019C1ED01C315EAC008EAF88 /* UIView+WPCategory.m */,
 			);
 			name = "Category-分类";
 			path = Category;
@@ -420,6 +436,7 @@
 		019C1EB31C31570C008EAF88 /* Tools-工具及常量 */ = {
 			isa = PBXGroup;
 			children = (
+				019C1ED41C318383008EAF88 /* PrefixHeader.pch */,
 			);
 			name = "Tools-工具及常量";
 			path = Tools;
@@ -656,8 +673,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019C1ED71C3188DE008EAF88 /* WPMainTabBarController.m in Sources */,
+				019C1ECC1C315956008EAF88 /* WPADViewController.m in Sources */,
 				019C1EC91C31570C008EAF88 /* main.m in Sources */,
 				019C1EC81C31570C008EAF88 /* AppDelegate.m in Sources */,
+				019C1ED11C315EAC008EAF88 /* UIView+WPCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +779,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(ProDUCT_NAME)WPNTES/Classes/Other/Tools/PrefixHeader.pch";
 				INFOPLIST_FILE = WPNTES/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangpeng.WPNTES;
@@ -770,6 +792,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(ProDUCT_NAME)WPNTES/Classes/Other/Tools/PrefixHeader.pch";
 				INFOPLIST_FILE = WPNTES/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangpeng.WPNTES;
