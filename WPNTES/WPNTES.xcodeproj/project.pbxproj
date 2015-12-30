@@ -19,8 +19,8 @@
 		019C1EF31C323002008EAF88 /* WPDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EF21C323002008EAF88 /* WPDiscoverTableViewController.m */; };
 		019C1EF61C32301F008EAF88 /* WPVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EF51C32301F008EAF88 /* WPVideoViewController.m */; };
 		019C1EF91C323029008EAF88 /* WPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EF81C323029008EAF88 /* WPMeViewController.m */; };
-		019C1EFC1C32316B008EAF88 /* WPBottomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EFB1C32316B008EAF88 /* WPBottomTabBar.m */; };
-		019C1EFF1C323186008EAF88 /* WPBottomTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EFE1C323186008EAF88 /* WPBottomTabBarButton.m */; };
+		019C1F081C33F2B4008EAF88 /* WPBottomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1F041C33F2B4008EAF88 /* WPBottomTabBar.m */; };
+		019C1F091C33F2B4008EAF88 /* WPBottomTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1F071C33F2B4008EAF88 /* WPBottomTabBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,10 +48,10 @@
 		019C1EF51C32301F008EAF88 /* WPVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPVideoViewController.m; sourceTree = "<group>"; };
 		019C1EF71C323029008EAF88 /* WPMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMeViewController.h; sourceTree = "<group>"; };
 		019C1EF81C323029008EAF88 /* WPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMeViewController.m; sourceTree = "<group>"; };
-		019C1EFA1C32316B008EAF88 /* WPBottomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBottomTabBar.h; sourceTree = "<group>"; };
-		019C1EFB1C32316B008EAF88 /* WPBottomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBottomTabBar.m; sourceTree = "<group>"; };
-		019C1EFD1C323186008EAF88 /* WPBottomTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBottomTabBarButton.h; sourceTree = "<group>"; };
-		019C1EFE1C323186008EAF88 /* WPBottomTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBottomTabBarButton.m; sourceTree = "<group>"; };
+		019C1F031C33F2B4008EAF88 /* WPBottomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBottomTabBar.h; sourceTree = "<group>"; };
+		019C1F041C33F2B4008EAF88 /* WPBottomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBottomTabBar.m; sourceTree = "<group>"; };
+		019C1F061C33F2B4008EAF88 /* WPBottomTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBottomTabBarButton.h; sourceTree = "<group>"; };
+		019C1F071C33F2B4008EAF88 /* WPBottomTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBottomTabBarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,12 +334,10 @@
 		019C1EA11C31570C008EAF88 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				019C1F021C33F2B4008EAF88 /* BottomTabBar */,
+				019C1F051C33F2B4008EAF88 /* BottomTabBarButton */,
 				019C1ED51C3188DE008EAF88 /* WPMainTabBarController.h */,
 				019C1ED61C3188DE008EAF88 /* WPMainTabBarController.m */,
-				019C1EFA1C32316B008EAF88 /* WPBottomTabBar.h */,
-				019C1EFB1C32316B008EAF88 /* WPBottomTabBar.m */,
-				019C1EFD1C323186008EAF88 /* WPBottomTabBarButton.h */,
-				019C1EFE1C323186008EAF88 /* WPBottomTabBarButton.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -637,6 +635,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		019C1F021C33F2B4008EAF88 /* BottomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				019C1F031C33F2B4008EAF88 /* WPBottomTabBar.h */,
+				019C1F041C33F2B4008EAF88 /* WPBottomTabBar.m */,
+			);
+			path = BottomTabBar;
+			sourceTree = "<group>";
+		};
+		019C1F051C33F2B4008EAF88 /* BottomTabBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				019C1F061C33F2B4008EAF88 /* WPBottomTabBarButton.h */,
+				019C1F071C33F2B4008EAF88 /* WPBottomTabBarButton.m */,
+			);
+			path = BottomTabBarButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -711,9 +727,9 @@
 				019C1EF61C32301F008EAF88 /* WPVideoViewController.m in Sources */,
 				019C1EED1C3222A9008EAF88 /* WPMainViewController.m in Sources */,
 				019C1EF01C322FEE008EAF88 /* WPReadingTableViewController.m in Sources */,
-				019C1EFC1C32316B008EAF88 /* WPBottomTabBar.m in Sources */,
+				019C1F081C33F2B4008EAF88 /* WPBottomTabBar.m in Sources */,
 				019C1EF91C323029008EAF88 /* WPMeViewController.m in Sources */,
-				019C1EFF1C323186008EAF88 /* WPBottomTabBarButton.m in Sources */,
+				019C1F091C33F2B4008EAF88 /* WPBottomTabBarButton.m in Sources */,
 				019C1ED71C3188DE008EAF88 /* WPMainTabBarController.m in Sources */,
 				019C1ECC1C315956008EAF88 /* WPADViewController.m in Sources */,
 				019C1EC91C31570C008EAF88 /* main.m in Sources */,
