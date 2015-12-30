@@ -7,7 +7,11 @@
 //
 
 #import "WPMainTabBarController.h"
-
+#import "WPMainViewController.h"
+#import "WPReadingTableViewController.h"
+#import "WPDiscoverTableViewController.h"
+#import "WPVideoViewController.h"
+#import "WPMeViewController.h"
 @interface WPMainTabBarController ()
 
 @end
@@ -17,7 +21,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    [self addChildViewController];
 }
+
+
+#pragma mark -- 统一添加子控制器
+- (void)addChildViewController{
+    [self addChildViewController:[[WPMainViewController alloc] init] title:@"新闻"];
+    [self addChildViewController:[[WPReadingTableViewController alloc]init] title:@"阅读"];
+    [self addChildViewController:[[WPDiscoverTableViewController alloc] init] title:@"发现"];
+    [self addChildViewController:[[WPVideoViewController alloc] init] title:@"视听"];
+    [self addChildViewController:[[WPMeViewController alloc] init] title:@"我"];
+     
+    
+
+}
+
+/** 添加navigationController控制器*/
+- (void)addChildViewController:(UIViewController *)vc title:(NSString *)title  {
+    
+    vc.title = title;
+//    vc.tabBarItem.image = [UIImage imageNamed:imageName];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

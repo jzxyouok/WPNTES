@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+/** 广告界面*/
+#import "WPADViewController.h"
+/** 登录主矿口*/
+#import "WPMainTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,13 +21,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     WPADViewController *adVC = [[WPADViewController alloc] init];
     
     self.window.rootViewController = adVC;
     
-    [self.window makeKeyAndVisible];
+    
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
@@ -32,11 +36,9 @@
         
         self.window.rootViewController = mainVC;
         
-        [self.window makeKeyAndVisible];
-        
-        
     });
     
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

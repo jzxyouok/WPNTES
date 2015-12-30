@@ -16,9 +16,8 @@
 
 
 #ifdef __OBJC__
+/** UIView分类*/
 #import "UIView+WPCategory.h"
-/** 登录广告窗口*/
-#import "WPADViewController.h"
-/** 主tabBar控制器*/
-#import "WPMainTabBarController.h"
+
+
 #endif
