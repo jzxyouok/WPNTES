@@ -39,7 +39,7 @@
     /** 添加按钮监听点击时间*/
     [bottomTabBarButton addTarget:self
                            action:@selector(didClickButtomTabBarButton:)
-                 forControlEvents:UIControlEventTouchDown];
+                 forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -65,6 +65,8 @@
         
         /** 实现代理方法*/
         [self.delegate bottomTabBar:self didClickButtomTabBarWithIndex:index];
+//        WPLog(@"%d", index);
+        NSLog(@"%d", index);
     }
     
 }

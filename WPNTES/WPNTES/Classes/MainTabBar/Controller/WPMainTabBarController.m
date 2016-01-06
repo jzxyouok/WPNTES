@@ -7,7 +7,7 @@
 //
 
 #import "WPMainTabBarController.h"
-
+#import "WPBaseNavigationController.h"
 #pragma mark -- 导入子控制器头文件
 #import "WPMainViewController.h"
 #import "WPReadingTableViewController.h"
@@ -27,41 +27,37 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    /** 初始化子控制器*/
-    [self addChildViewController];
 
-    /** 自定义设置TabBarButton*/
-    [self setupCustomTabBar];
     
-}
+}        
 
 
 #pragma mark -- 统一添加子控制器
 /**
  *统一添加子控制器
  */
-- (void)addChildViewController{
-    [self addChildViewController:[[WPMainViewController alloc] init] title:@""];
-    [self addChildViewController:[[WPReadingTableViewController alloc]init] title:@""];
-    [self addChildViewController:[[WPDiscoverTableViewController alloc] init] title:@""];
-    [self addChildViewController:[[WPVideoViewController alloc] init] title:@""];
-    [self addChildViewController:[[WPMeViewController alloc] init] title:@""];
-     
-    
+- (void)setupChildViewControllers{
 
+    /** 新闻中心*/
+    WPBaseNavigationController *navMain = [self navigationControllerWithStroyboardName:@"Main"];
+    /** 阅读中心*/
+    WPBaseNavigationController *navRead = [self navigationControllerWithStroyboardName:@"Read"];
+    /** 视听中心*/
+    WPBaseNavigationController *navVideo = [self navigationControllerWithStroyboardName:@"Video"];
+    /** 发现中心*/
+    WPBaseNavigationController *navDiscover = [self navigationControllerWithStroyboardName:@"Discover"];
+    /** 关于我*/
+    WPBaseNavigationController *navMe = [self navigationControllerWithStroyboardName:@"Me"];
+    self.viewControllers = @[navMain, navRead, navVideo, navDiscover, navMe];
 }
 
-/**
- *添加navigationController控制器
- */
-- (void)addChildViewController:(UIViewController *)vc title:(NSString *)title  {
-    
-    vc.title = title;
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    [self addChildViewController:nav];
-    
-}
+- (WPBaseNavigationController *)navigationControllerWithStroyboardName:(NSString *)name{
 
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:nil];
+    /** 设置为初始化控制器*/
+    return [storyboard instantiateInitialViewController];
+
+}
 #pragma mark -- 设置自定义底部tabBar
 /**
  *设置自定义Tabbar
@@ -71,8 +67,7 @@
     /** 创建自定义TabBar*/
     WPBottomTabBar *bottomTabBar = [[WPBottomTabBar alloc] init];
     
-    /** 遵守代理协议*/
-    bottomTabBar.delegate = self;
+    
     
     /** 通过循环来给bottomTabBar中按钮赋值*/
     NSUInteger count = self.viewControllers.count;
@@ -92,7 +87,11 @@
     //设置Bottom的frame
     bottomTabBar.frame = self.tabBar.bounds;
     
-    [self.tabBar addSubview:bottomTabBar];
+    
+    [self.tabBar insertSubview:bottomTabBar aboveSubview:self.tabBar];
+    
+    /** 遵守代理协议*/
+    bottomTabBar.delegate = self;
     
 }
 
@@ -103,6 +102,9 @@
 - (void)bottomTabBar:(WPBottomTabBar *)bottomTabBar didClickButtomTabBarWithIndex:(int)index{
 
     self.selectedIndex = index;
+    
+    NSLog(@"%zd", self.selectedIndex);
+    
     
 }
 @end

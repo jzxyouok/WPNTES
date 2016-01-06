@@ -21,3 +21,9 @@
 
 
 #endif
+
+#ifdef DEBUG
+#define WPLog(...) NSLog(__VA_ARGS__)
+#else
+#define WPLog(...)
+#endif
