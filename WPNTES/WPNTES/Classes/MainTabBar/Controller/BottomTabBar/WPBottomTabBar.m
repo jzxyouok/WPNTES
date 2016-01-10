@@ -12,7 +12,7 @@
 
 @interface WPBottomTabBar ()
 /** 记录当前被选中的Button*/
-@property (weak, nonatomic)WPBottomTabBarButton *selectedButton;
+@property (weak, nonatomic)UIButton *selectedButton;
 @end
 
 
@@ -28,11 +28,13 @@
     /** 创建按钮*/
     WPBottomTabBarButton *bottomTabBarButton = [[WPBottomTabBarButton alloc] init];
     /** 设置默认状态显示图片*/
-    [bottomTabBarButton setImage:[UIImage imageNamed:normal]
-                                  forState:UIControlStateNormal];
+    [bottomTabBarButton setImage:
+             [UIImage imageNamed:normal]
+                        forState:UIControlStateNormal];
     /** 设置选中状态图片*/
-    [bottomTabBarButton setImage:[UIImage imageNamed:selected]
-                                  forState:UIControlStateSelected];
+    [bottomTabBarButton setImage:
+             [UIImage imageNamed:selected]
+                        forState:UIControlStateSelected];
     /** 将按钮添加入底部tabBar上*/
     [self addSubview:bottomTabBarButton];
     
@@ -65,8 +67,6 @@
         
         /** 实现代理方法*/
         [self.delegate bottomTabBar:self didClickButtomTabBarWithIndex:index];
-//        WPLog(@"%d", index);
-        NSLog(@"%d", index);
     }
     
 }

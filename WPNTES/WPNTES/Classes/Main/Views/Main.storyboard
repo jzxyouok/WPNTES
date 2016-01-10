@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qIk-Pu-FZJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-479" y="505"/>
         </scene>
-        <!--Main View Controller-->
+        <!--头条-->
         <scene sceneID="6ZE-QM-R4E">
             <objects>
                 <viewController id="v3B-wW-noz" customClass="WPMainViewController" sceneMemberID="viewController">
@@ -32,9 +32,33 @@
                     <view key="view" contentMode="scaleToFill" id="tmT-WN-FVr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDX-v9-G5q" userLabel="title Scroll View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="c5y-cM-Yda"/>
+                                </constraints>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fm-IJ-U8g" userLabel="content Scroll View">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wDX-v9-G5q" firstAttribute="leading" secondItem="tmT-WN-FVr" secondAttribute="leading" id="2XK-Qy-Gav"/>
+                            <constraint firstAttribute="trailing" secondItem="9Fm-IJ-U8g" secondAttribute="trailing" id="5jT-VS-jML"/>
+                            <constraint firstItem="9Fm-IJ-U8g" firstAttribute="top" secondItem="wDX-v9-G5q" secondAttribute="bottom" id="Ci5-It-RgI"/>
+                            <constraint firstItem="MIM-tP-SMC" firstAttribute="top" secondItem="9Fm-IJ-U8g" secondAttribute="bottom" id="YSB-uI-1PC"/>
+                            <constraint firstItem="9Fm-IJ-U8g" firstAttribute="leading" secondItem="tmT-WN-FVr" secondAttribute="leading" id="iBB-xu-NPq"/>
+                            <constraint firstAttribute="trailing" secondItem="wDX-v9-G5q" secondAttribute="trailing" id="mVf-Il-aYU"/>
+                            <constraint firstItem="wDX-v9-G5q" firstAttribute="top" secondItem="4fu-pQ-GIL" secondAttribute="bottom" id="w78-XH-4NM"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ghx-vg-KUn"/>
+                    <navigationItem key="navigationItem" title="头条" id="Cry-CV-C6K"/>
+                    <connections>
+                        <outlet property="contentScrollView" destination="9Fm-IJ-U8g" id="C7M-9q-xDK"/>
+                        <outlet property="titleScrollView" destination="wDX-v9-G5q" id="sNr-rb-dQT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5y5-1m-337" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

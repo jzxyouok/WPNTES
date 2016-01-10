@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jrs-pZ-hUD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--发现-->
         <scene sceneID="OSH-kR-psc">
             <objects>
                 <tableViewController id="3j2-RS-2UI" customClass="WPDiscoverTableViewController" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                             <outlet property="delegate" destination="3j2-RS-2UI" id="K9M-Gb-yon"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="PJQ-Vz-U9x"/>
+                    <navigationItem key="navigationItem" title="发现" id="60T-t0-Pf4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ca-72-lci" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

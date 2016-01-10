@@ -7,17 +7,26 @@
 //
 
 #import "WPMainViewController.h"
+#import "WPChannel.h"
+
 
 @interface WPMainViewController ()
+/** 标题ScrollView*/
+@property (weak, nonatomic) IBOutlet UIScrollView *titleScrollView;
+/** 内容ScrollView*/
+@property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
+/** 模型数据*/
+@property (strong, nonatomic) NSArray *channelList;
 
 @end
 
 @implementation WPMainViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+    WPLog(@"%@",self.channelList);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +34,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark -- 懒加载
+- (NSArray *)channelList{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if (_channelList == nil) {
+        
+        /** 加载二进制的JSON数据*/
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"topic_news.json" ofType:nil];
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        
+        /** 二进制数据进行JSON反序列化*/
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        /** 从字典中获取数组数据*/
+        NSArray *dictArray = dict[dict.keyEnumerator.nextObject];
+        
+        NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:10];
+        /** 字典转模型*/
+        for (NSDictionary *diction in dictArray) {
+            
+            WPChannel *channel = [WPChannel channelWithDict:diction];
+            
+            [arrayM addObject:channel];
+        }
+    
+        /** 通过tid从小到达的排序*/
+        _channelList = [arrayM sortedArrayUsingComparator:^NSComparisonResult(WPChannel *obj1, WPChannel *obj2) {
+            return [obj1.tid compare:obj2.tid];
+        }];
+    }
+    
+    return _channelList;
 }
-*/
 
 @end

@@ -26,22 +26,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-
-    
-}        
+    [self setupChildViewControllers];
+    [self setupCustomTabBar];
+}
 
 
 #pragma mark -- 统一添加子控制器
 /**
- *统一添加子控制器
+ *统一初始化子控制器
  */
 - (void)setupChildViewControllers{
 
     /** 新闻中心*/
     WPBaseNavigationController *navMain = [self navigationControllerWithStroyboardName:@"Main"];
     /** 阅读中心*/
-    WPBaseNavigationController *navRead = [self navigationControllerWithStroyboardName:@"Read"];
+    WPBaseNavigationController *navRead = [self navigationControllerWithStroyboardName:@"Reading"];
     /** 视听中心*/
     WPBaseNavigationController *navVideo = [self navigationControllerWithStroyboardName:@"Video"];
     /** 发现中心*/
@@ -67,12 +66,10 @@
     /** 创建自定义TabBar*/
     WPBottomTabBar *bottomTabBar = [[WPBottomTabBar alloc] init];
     
-    
+    NSUInteger idx = self.viewControllers.count;
     
     /** 通过循环来给bottomTabBar中按钮赋值*/
-    NSUInteger count = self.viewControllers.count;
-    
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < idx; i++) {
         
         /** 拼接默认状态图片名*/
         NSString *nonmal = [NSString stringWithFormat:@"TabBar%d", i + 1];
@@ -100,11 +97,6 @@
  *BottomTabBar代理协议
  */
 - (void)bottomTabBar:(WPBottomTabBar *)bottomTabBar didClickButtomTabBarWithIndex:(int)index{
-
     self.selectedIndex = index;
-    
-    NSLog(@"%zd", self.selectedIndex);
-    
-    
 }
 @end

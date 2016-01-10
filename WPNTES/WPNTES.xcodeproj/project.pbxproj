@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0102646E1C4207AE00564738 /* WPReadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0102646D1C4207AE00564738 /* WPReadingTableViewController.m */; };
+		010264701C4207BC00564738 /* Reading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0102646F1C4207BC00564738 /* Reading.storyboard */; };
+		010264731C426DA200564738 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 010264721C426DA200564738 /* topic_news.json */; };
+		010264761C426DC200564738 /* WPChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 010264751C426DC200564738 /* WPChannel.m */; };
+		0102647A1C426FEF00564738 /* WPHomeLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 010264791C426FEF00564738 /* WPHomeLable.m */; };
 		019C1E7D1C315575008EAF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019C1E7C1C315575008EAF88 /* Assets.xcassets */; };
 		019C1E801C315575008EAF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019C1E7E1C315575008EAF88 /* LaunchScreen.storyboard */; };
 		019C1EC81C31570C008EAF88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EAF1C31570C008EAF88 /* AppDelegate.m */; };
@@ -14,7 +19,6 @@
 		019C1ECC1C315956008EAF88 /* WPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1ECB1C315956008EAF88 /* WPADViewController.m */; };
 		019C1ED11C315EAC008EAF88 /* UIView+WPCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1ED01C315EAC008EAF88 /* UIView+WPCategory.m */; };
 		019C1ED71C3188DE008EAF88 /* WPMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1ED61C3188DE008EAF88 /* WPMainTabBarController.m */; };
-		019C1EF01C322FEE008EAF88 /* WPReadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EEF1C322FEE008EAF88 /* WPReadingTableViewController.m */; };
 		019C1F081C33F2B4008EAF88 /* WPBottomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1F041C33F2B4008EAF88 /* WPBottomTabBar.m */; };
 		019C1F091C33F2B4008EAF88 /* WPBottomTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1F071C33F2B4008EAF88 /* WPBottomTabBarButton.m */; };
 		01EF0BB71C3AC7BC00383DF2 /* Ad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EF0BB61C3AC7BC00383DF2 /* Ad.storyboard */; };
@@ -30,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0102646C1C4207AE00564738 /* WPReadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPReadingTableViewController.h; sourceTree = "<group>"; };
+		0102646D1C4207AE00564738 /* WPReadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPReadingTableViewController.m; sourceTree = "<group>"; };
+		0102646F1C4207BC00564738 /* Reading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reading.storyboard; sourceTree = "<group>"; };
+		010264721C426DA200564738 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		010264741C426DC200564738 /* WPChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPChannel.h; sourceTree = "<group>"; };
+		010264751C426DC200564738 /* WPChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPChannel.m; sourceTree = "<group>"; };
+		010264781C426FEF00564738 /* WPHomeLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHomeLable.h; sourceTree = "<group>"; };
+		010264791C426FEF00564738 /* WPHomeLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHomeLable.m; sourceTree = "<group>"; };
 		019C1E6D1C315575008EAF88 /* WPNTES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPNTES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019C1E7C1C315575008EAF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		019C1E7F1C315575008EAF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,8 +56,6 @@
 		019C1ED41C318383008EAF88 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		019C1ED51C3188DE008EAF88 /* WPMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMainTabBarController.h; sourceTree = "<group>"; };
 		019C1ED61C3188DE008EAF88 /* WPMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMainTabBarController.m; sourceTree = "<group>"; };
-		019C1EEE1C322FEE008EAF88 /* WPReadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPReadingTableViewController.h; sourceTree = "<group>"; };
-		019C1EEF1C322FEE008EAF88 /* WPReadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPReadingTableViewController.m; sourceTree = "<group>"; };
 		019C1F031C33F2B4008EAF88 /* WPBottomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBottomTabBar.h; sourceTree = "<group>"; };
 		019C1F041C33F2B4008EAF88 /* WPBottomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBottomTabBar.m; sourceTree = "<group>"; };
 		019C1F061C33F2B4008EAF88 /* WPBottomTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBottomTabBarButton.h; sourceTree = "<group>"; };
@@ -78,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010264711C426D7800564738 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				010264721C426DA200564738 /* topic_news.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		010264771C426FCB00564738 /* HomeLable */ = {
+			isa = PBXGroup;
+			children = (
+				010264781C426FEF00564738 /* WPHomeLable.h */,
+				010264791C426FEF00564738 /* WPHomeLable.m */,
+			);
+			path = HomeLable;
+			sourceTree = "<group>";
+		};
 		019C1E641C315575008EAF88 = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +351,9 @@
 		019C1E9E1C31570C008EAF88 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				010264711C426D7800564738 /* JSON */,
+				010264741C426DC200564738 /* WPChannel.h */,
+				010264751C426DC200564738 /* WPChannel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,6 +361,7 @@
 		019C1E9F1C31570C008EAF88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				010264771C426FCB00564738 /* HomeLable */,
 				01EF0C111C3D2ECB00383DF2 /* Main.storyboard */,
 			);
 			path = Views;
@@ -535,6 +566,8 @@
 		019C1EB91C31570C008EAF88 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0102646C1C4207AE00564738 /* WPReadingTableViewController.h */,
+				0102646D1C4207AE00564738 /* WPReadingTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -549,8 +582,7 @@
 		019C1EBB1C31570C008EAF88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				019C1EEE1C322FEE008EAF88 /* WPReadingTableViewController.h */,
-				019C1EEF1C322FEE008EAF88 /* WPReadingTableViewController.m */,
+				0102646F1C4207BC00564738 /* Reading.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -713,7 +745,6 @@
 				TargetAttributes = {
 					019C1E6C1C315575008EAF88 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 7AHQ9R8666;
 					};
 				};
 			};
@@ -743,6 +774,8 @@
 				019C1E801C315575008EAF88 /* LaunchScreen.storyboard in Resources */,
 				01EF0BB71C3AC7BC00383DF2 /* Ad.storyboard in Resources */,
 				01EF0C191C3D304800383DF2 /* Video.storyboard in Resources */,
+				010264731C426DA200564738 /* topic_news.json in Resources */,
+				010264701C4207BC00564738 /* Reading.storyboard in Resources */,
 				01EF0C171C3D300300383DF2 /* Discover.storyboard in Resources */,
 				019C1E7D1C315575008EAF88 /* Assets.xcassets in Resources */,
 				01EF0C211C3D30DC00383DF2 /* Me.storyboard in Resources */,
@@ -757,18 +790,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019C1EF01C322FEE008EAF88 /* WPReadingTableViewController.m in Sources */,
 				019C1F081C33F2B4008EAF88 /* WPBottomTabBar.m in Sources */,
 				01EF0C1F1C3D30BD00383DF2 /* WPMeViewController.m in Sources */,
 				019C1F091C33F2B4008EAF88 /* WPBottomTabBarButton.m in Sources */,
+				0102646E1C4207AE00564738 /* WPReadingTableViewController.m in Sources */,
 				01EF0C101C3D2EC000383DF2 /* WPMainViewController.m in Sources */,
 				019C1ED71C3188DE008EAF88 /* WPMainTabBarController.m in Sources */,
 				019C1ECC1C315956008EAF88 /* WPADViewController.m in Sources */,
 				01EF0C151C3D2FE900383DF2 /* WPDiscoverTableViewController.m in Sources */,
+				0102647A1C426FEF00564738 /* WPHomeLable.m in Sources */,
 				019C1EC91C31570C008EAF88 /* main.m in Sources */,
 				019C1EC81C31570C008EAF88 /* AppDelegate.m in Sources */,
 				019C1ED11C315EAC008EAF88 /* UIView+WPCategory.m in Sources */,
 				01EF0C1C1C3D305C00383DF2 /* WPVideoViewController.m in Sources */,
+				010264761C426DC200564738 /* WPChannel.m in Sources */,
 				01EF0C0D1C3D2E9600383DF2 /* WPBaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,11 +906,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(ProDUCT_NAME)WPNTES/Classes/Other/Tools/PrefixHeader.pch";
 				INFOPLIST_FILE = WPNTES/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wangpeng.WPNTES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangpeng.WPNTEStest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -884,11 +921,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(ProDUCT_NAME)WPNTES/Classes/Other/Tools/PrefixHeader.pch";
 				INFOPLIST_FILE = WPNTES/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wangpeng.WPNTES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangpeng.WPNTEStest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
