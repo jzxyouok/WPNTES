@@ -12,6 +12,10 @@
 		010264731C426DA200564738 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 010264721C426DA200564738 /* topic_news.json */; };
 		010264761C426DC200564738 /* WPChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 010264751C426DC200564738 /* WPChannel.m */; };
 		0102647A1C426FEF00564738 /* WPHomeLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 010264791C426FEF00564738 /* WPHomeLable.m */; };
+		010264811C4279A900564738 /* WPHeadlineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010264801C4279A900564738 /* WPHeadlineTableViewController.m */; };
+		010264841C4279C000564738 /* WPSocietyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010264831C4279C000564738 /* WPSocietyTableViewController.m */; };
+		010264861C4279E100564738 /* Society.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010264851C4279E100564738 /* Society.storyboard */; };
+		010264881C427A1200564738 /* Headline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010264871C427A1200564738 /* Headline.storyboard */; };
 		019C1E7D1C315575008EAF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019C1E7C1C315575008EAF88 /* Assets.xcassets */; };
 		019C1E801C315575008EAF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019C1E7E1C315575008EAF88 /* LaunchScreen.storyboard */; };
 		019C1EC81C31570C008EAF88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C1EAF1C31570C008EAF88 /* AppDelegate.m */; };
@@ -42,6 +46,12 @@
 		010264751C426DC200564738 /* WPChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPChannel.m; sourceTree = "<group>"; };
 		010264781C426FEF00564738 /* WPHomeLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHomeLable.h; sourceTree = "<group>"; };
 		010264791C426FEF00564738 /* WPHomeLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHomeLable.m; sourceTree = "<group>"; };
+		0102647F1C4279A900564738 /* WPHeadlineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHeadlineTableViewController.h; sourceTree = "<group>"; };
+		010264801C4279A900564738 /* WPHeadlineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHeadlineTableViewController.m; sourceTree = "<group>"; };
+		010264821C4279C000564738 /* WPSocietyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPSocietyTableViewController.h; sourceTree = "<group>"; };
+		010264831C4279C000564738 /* WPSocietyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPSocietyTableViewController.m; sourceTree = "<group>"; };
+		010264851C4279E100564738 /* Society.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Society.storyboard; sourceTree = "<group>"; };
+		010264871C427A1200564738 /* Headline.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Headline.storyboard; sourceTree = "<group>"; };
 		019C1E6D1C315575008EAF88 /* WPNTES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPNTES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019C1E7C1C315575008EAF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		019C1E7F1C315575008EAF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,6 +113,24 @@
 				010264791C426FEF00564738 /* WPHomeLable.m */,
 			);
 			path = HomeLable;
+			sourceTree = "<group>";
+		};
+		0102647D1C42798C00564738 /* HeadlineTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0102647F1C4279A900564738 /* WPHeadlineTableViewController.h */,
+				010264801C4279A900564738 /* WPHeadlineTableViewController.m */,
+			);
+			path = HeadlineTableViewController;
+			sourceTree = "<group>";
+		};
+		0102647E1C42798C00564738 /* SocietyTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				010264821C4279C000564738 /* WPSocietyTableViewController.h */,
+				010264831C4279C000564738 /* WPSocietyTableViewController.m */,
+			);
+			path = SocietyTableViewController;
 			sourceTree = "<group>";
 		};
 		019C1E641C315575008EAF88 = {
@@ -342,6 +370,8 @@
 		019C1E9D1C31570C008EAF88 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0102647D1C42798C00564738 /* HeadlineTableViewController */,
+				0102647E1C42798C00564738 /* SocietyTableViewController */,
 				01EF0C0E1C3D2EC000383DF2 /* WPMainViewController.h */,
 				01EF0C0F1C3D2EC000383DF2 /* WPMainViewController.m */,
 			);
@@ -363,6 +393,8 @@
 			children = (
 				010264771C426FCB00564738 /* HomeLable */,
 				01EF0C111C3D2ECB00383DF2 /* Main.storyboard */,
+				010264851C4279E100564738 /* Society.storyboard */,
+				010264871C427A1200564738 /* Headline.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -774,12 +806,14 @@
 				019C1E801C315575008EAF88 /* LaunchScreen.storyboard in Resources */,
 				01EF0BB71C3AC7BC00383DF2 /* Ad.storyboard in Resources */,
 				01EF0C191C3D304800383DF2 /* Video.storyboard in Resources */,
+				010264881C427A1200564738 /* Headline.storyboard in Resources */,
 				010264731C426DA200564738 /* topic_news.json in Resources */,
 				010264701C4207BC00564738 /* Reading.storyboard in Resources */,
 				01EF0C171C3D300300383DF2 /* Discover.storyboard in Resources */,
 				019C1E7D1C315575008EAF88 /* Assets.xcassets in Resources */,
 				01EF0C211C3D30DC00383DF2 /* Me.storyboard in Resources */,
 				01EF0C121C3D2ECB00383DF2 /* Main.storyboard in Resources */,
+				010264861C4279E100564738 /* Society.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,6 +826,7 @@
 			files = (
 				019C1F081C33F2B4008EAF88 /* WPBottomTabBar.m in Sources */,
 				01EF0C1F1C3D30BD00383DF2 /* WPMeViewController.m in Sources */,
+				010264811C4279A900564738 /* WPHeadlineTableViewController.m in Sources */,
 				019C1F091C33F2B4008EAF88 /* WPBottomTabBarButton.m in Sources */,
 				0102646E1C4207AE00564738 /* WPReadingTableViewController.m in Sources */,
 				01EF0C101C3D2EC000383DF2 /* WPMainViewController.m in Sources */,
@@ -805,6 +840,7 @@
 				01EF0C1C1C3D305C00383DF2 /* WPVideoViewController.m in Sources */,
 				010264761C426DC200564738 /* WPChannel.m in Sources */,
 				01EF0C0D1C3D2E9600383DF2 /* WPBaseNavigationController.m in Sources */,
+				010264841C4279C000564738 /* WPSocietyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
